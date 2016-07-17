@@ -1,0 +1,27 @@
+insert ignore  into teams values(1,'Team A');
+insert ignore  into teams values(2,'Team B');
+insert ignore  into teams values(3,'Team C');
+insert ignore  into teams values(4,'Team D');
+insert ignore  into teams values(5,'Team E');
+
+insert ignore  into students values(1,'Student A',NULL);
+insert ignore  into students values(2,'Student B',NULL);
+insert ignore  into students values(3,'Student C',NULL);
+insert ignore  into students values(4,'Student D',NULL);
+insert ignore  into students values(5,'Student E',NULL);
+insert ignore  into students values(6,'Student F',NULL);
+insert ignore  into students values(7,'Student G',NULL);
+insert ignore  into students values(8,'Student H',NULL);
+insert ignore  into students values(9,'Student I',NULL);
+insert ignore  into students values(10,'Student J',NULL);
+insert ignore  into students values(11,'Student K',NULL);
+insert ignore  into students values(12,'Student L',NULL);
+insert ignore  into students values(13,'Student M',NULL);
+insert ignore  into students values(14,'Student N',NULL);
+insert ignore  into students values(15,'Student O',NULL);
+insert ignore  into students values(16,'Student P',1);
+insert ignore  into students values(17,'Student Q',3);
+insert ignore  into students values(18,'Student R',3);
+insert ignore  into students values(19,'Student S',5);
+insert ignore  into students values(20,'Student T',5);
+insert ignore  into students values(21,'Student U',5);
