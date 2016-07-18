@@ -1,4 +1,5 @@
-package test.harish.teams.model;
+package test.harish.team.model;
+
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -1,4 +1,4 @@
-package test.harish.teams;
+package test.harish;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

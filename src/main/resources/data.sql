@@ -25,3 +25,18 @@ insert ignore  into students values(18,'Student R',3);
 insert ignore  into students values(19,'Student S',5);
 insert ignore  into students values(20,'Student T',5);
 insert ignore  into students values(21,'Student U',5);
+
+insert ignore into node values(1,'Node A');
+insert ignore into node values(2,'Node B');
+insert ignore into node values(3,'Node C');
+insert ignore into node values(4,'Node D');
+insert ignore  into node values(5,'Node E');
+insert ignore into node values(6,'Node F');
+insert ignore into node values(7,'Node G');
+
+insert ignore into node_children values(1,2);
+insert ignore into node_children values(1,4);
+insert ignore into node_children values(1,3);
+insert ignore into node_children values(3,6);
+insert ignore into node_children values(4,5);
+insert ignore into node_children values(3,7);

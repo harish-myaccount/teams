@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link href="https://mbraak.github.io/jqTree/jqtree.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript"
+	src="https://mbraak.github.io/jqTree/tree.jquery.js"></script>
+<style>
+body {
+	padding-top: 50px;
+}
+
+div#tree {
+	width: 500px;
+}
+
+/* tree  */
+ul {
+list-style-type: none;
+}
+
+ul.jqtree-tree .jqtree-element {
+	position: relative;
+	
+	/* Store - new css */
+	padding: 7px;
+	border-radius: 4px;
+}
+
+ul.jqtree-tree li {
+	/* Store - new css */
+	border: 1px solid #143546;
+	margin: 7px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+ul.jqtree-tree span.jqtree-border {
+	/* Store - new css */
+	padding: 7px;
+	border-radius: 4px;
+}
+/* tree ends */
+</style>
+</head>
+<body>
+	<div id="tree"></div>
+	<button onclick="javascript:save();">save</button>
+	<p id="msg"></p>
+	<script type="text/javascript">
+		$.getJSON('/node/', function(data) {
+			$('#tree').tree({
+				data : data,
+				autoOpen : true,
+				dragAndDrop : true
+			});
+		});
+		function save() {
+			data = $("#tree").tree('toJson');
+			console.log('saving to server');
+			$.ajax({type:'POST',url:'/node',data: data.slice(1,-1),success: function(response) {
+				console.log(response);
+				$("#msg").append("<h2>Saved at "+new Date()+"</h2>");
+			},contentType:"application/json"})
+		}
+	</script>
+
+</body>
+</html>

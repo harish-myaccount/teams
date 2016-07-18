@@ -1,4 +1,4 @@
-package test.harish.teams.controller;
+package test.harish.team.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import test.harish.teams.dao.StudentRepository;
-import test.harish.teams.dao.TeamRepository;
-import test.harish.teams.model.Student;
-import test.harish.teams.model.Team;
-import test.harish.teams.util.Constants;
+import test.harish.team.dao.StudentRepository;
+import test.harish.team.dao.TeamRepository;
+import test.harish.team.model.Student;
+import test.harish.team.model.Team;
+import test.harish.util.Constants;
 
 @RestController
 public class StudentController {

@@ -1,4 +1,4 @@
-package test.harish.teams.util;
+package test.harish.util;
 
 public class Constants {
 	public final static String SUCCESS="success";
